@@ -81,12 +81,12 @@
 
 .navigation .menu-option:hover {
     color: rgb(31, 31, 31, 0.9);
-    background:white;
+    background: white;
 }
 
 .navigation .menu-option:active {
     color: rgba(255, 255, 255, 0.525);
-    background:white;
+    background: white;
 }
 
 .menu-item {
@@ -113,7 +113,7 @@
     margin: 2px;
     border-radius: 4px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.881);;
+    color: rgba(255, 255, 255, 0.881);
     background-color: rgba(255, 255, 255, 0);
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -206,20 +206,28 @@
 .contact-item {
     margin: 10px;
     display: flex;
-    flex-direction: row;
 }
 
 .contact-item a {
-    height: 100%;
-    align-items: center;
-    text-align: center;
+    display: table;
+    color: rgba(255, 255, 255, 0.811);
+    text-decoration: none;
 }
 
 .contact-item a p {
-    height: 100%;
+    margin-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .contact-icon {
+    height: 100%;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.contact-icon img {
     width: 25px;
     height: 25px;
 }
