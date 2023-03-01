@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Vinicius Honda</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="./styles/index.css">
@@ -15,59 +16,69 @@
                 <div class="profile">
                     <img class="profile-picture" src="./resources/profile-picture.jpg" />
                     <h3 class="profile-name">Vinicius Eidi Honda</h3>
-                    <h4 class="profile-description">Full Stack Developer</h4>
+                    <h4 id="profile-description" class="profile-description">Full Stack Developer</h4>
                 </div>
                 <div class="navigation">
                     <nav>
                         <ul>
                             <li>
                                 <a class="menu-option" href="#about">
-                                    <span class="menu-item">About</span>
+                                    <span id="about-menu" class="menu-item">About</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="menu-option" href="#skills">
-                                    <span class="menu-item">Skills</span>
+                                    <span id="skills-menu" class="menu-item">Skills</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="menu-option" href="#contact">
-                                    <span class="menu-item">Contact</span>
+                                    <span id="contact-menu" class="menu-item">Contact</span>
                                 </a>
                             </li>
                         </ul>
                     </nav>
+                </div>
+                <div class="config">
+                    <div class="language-container">
+                        <button id="en-button" class="language-button" onclick="setLanguage('en')">
+                            English
+                        </button>
+                        <button id="pt-button" class="language-button" onclick="setLanguage('pt-BR')">
+                            Portuguese
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="content-wrapper">
             <div class="content">
                 <div id="about" class="content-item">
-                    <h2 class="item-title">About</h2>
+                    <h2 id="about-title" class="item-title">About</h2>
                     <div class="section-icon">
-                        <img  src="./resources/info-icon.png"/>
+                        <img src="./resources/info-icon.png" />
                     </div>
                     <span class="content-text">
-                        <label>Name:</label>
+                        <label id="name-label">Name:</label>
                         <p>Vinicius Eidi Honda</p>
                     </span>
                     <span class="content-text">
-                        <label>Age:</label>
+                        <label id="age-label">Age:</label>
                         <p id="age-text"></p>
                     </span>
                     <span class="content-text">
-                        <label>Country:</label>
-                        <p>Brazil</p>
+                        <label id="country-label">Country:</label>
+                        <p id="country-text">Brazil</p>
                     </span>
                     <span class="content-text">
-                        <label>City:</label>
+                        <label id="city-label">City:</label>
                         <p>Sorocaba</p>
                     </span>
                 </div>
                 <div id="skills" class="content-item">
-                    <h2 class="item-title">Skills</h2>
+                    <h2 id="skills-title" class="item-title">Skills</h2>
                     <div class="section-icon">
-                        <img src="./resources/stats-icon.png"/>
+                        <img src="./resources/stats-icon.png" />
                     </div>
                     <div class="content-group">
                         <div class="content-section">
@@ -92,7 +103,29 @@
                     </div>
                 </div>
                 <div id="contact" class="content-item">
-                    <h2 class="item-title">Contact</h2>
+                    <h2 id="contact-title" class="item-title">Contact</h2>
+                    <div class="contact-container">
+                        <div class="contact-item">
+                            <span>
+                                <img class="contact-icon" src="./resources/linkedin-icon.png" />
+                            </span>
+                            <a href="https://www.linkedin.com/in/viniciusehonda/" target="_blank">
+                                <p>
+                                    Linkedin
+                                </p>
+                            </a>
+                        </div>
+                        <div class="contact-item">
+                            <span>
+                                <img class="contact-icon" src="./resources/github-icon.png" />
+                            </span>
+                            <a href="https://github.com/viniciusehonda" target="_blank">
+                                <p>
+                                    Github
+                                </p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
