@@ -9,7 +9,9 @@ const en = {
     "city": "City",
     "english": "English",
     "portuguese": "Portuguese",
-    "brazil": "Brazil"
+    "brazil": "Brazil",
+    "dev-skills": "Skills",
+    "languages": "Languages"
 };
 
 const ptBR = {
@@ -23,7 +25,9 @@ const ptBR = {
     "city": "Cidade",
     "english": "Inglês",
     "portuguese": "Português",
-    "brazil": "Brasil"
+    "brazil": "Brasil",
+    "dev-skills": "Habilidades",
+    "languages": "Idiomas"
 };
 
 function Initialize() {
@@ -69,6 +73,9 @@ function initializeLanguage() {
     document.getElementById("age-label").innerText = languageRes["age"] + ":";
     document.getElementById("country-label").innerText = languageRes["country"] + ":";
     document.getElementById("city-label").innerText = languageRes["city"] + ":";
+
+    document.getElementById("dev-skills-title").innerText = languageRes["dev-skills"];
+    document.getElementById("languages-title").innerText = languageRes["languages"];
 }
 
 function getLanguage() {

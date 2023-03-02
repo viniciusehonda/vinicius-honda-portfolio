@@ -193,6 +193,11 @@
     padding: 7px;
 }
 
+.label {
+    margin: auto 5px auto 0;
+    font-weight: bold;
+}
+
 .section-icon {
     display: flex;
     flex-direction: column;
