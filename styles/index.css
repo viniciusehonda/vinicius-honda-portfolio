@@ -209,8 +209,6 @@
 
 .content-group {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
 }
 
 
@@ -218,13 +216,11 @@
     .content-group {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
     }
 }
 
 .content-section {
-    flex-grow: 1;
-    height: 100%;
+    flex: 1;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
