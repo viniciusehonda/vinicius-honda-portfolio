@@ -11,133 +11,171 @@
 </head>
 
 <body onload="Initialize();">
-    <div class="body-wrapper">
-        <div class="menu-wrapper">
-            <div class="side-menu">
+    <div class="layout">
+        <header class="header">
+            <div class="header-content">
+                <nav class="header-nav">
+                    <div class="logo">
+                        <p class="logo-initials">VH</p>
+                    </div>
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a class="nav-menu-item" href="#about">
+                                    <span id="about-menu" class="menu-item">About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-menu-item" href="#skills">
+                                    <span id="skills-menu" class="menu-item">Skills</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-menu-item" href="#contact">
+                                    <span id="contact-menu" class="menu-item">Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="config">
+                            <div class="language-container">
+                                <button id="en-button" class="language-button" onclick="setLanguage('en')">
+                                    EN
+                                </button>
+                                <button id="pt-button" class="language-button" onclick="setLanguage('pt-BR')">
+                                    PT
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="content">
+            <main class="content-container">
+                <section class="welcome-section">
+                    <div>
+                        <h1 id="greeting-title">Welcome to my portfolio, my name is</h1>
+                    </div>
+                    <div>
+                        <h2 id="name-title">Vinicius Eidi Honda</h2>
+                    </div>
+                    <div>
+                        <h3 id="ocupation-title">And i'm a Full Stack Web Developer</h3>
+                    </div>
+                    <div class="welcome-introduction">
+                        <p id="welcome-introduction-text">
+                            I have experience in designing and developing web APIs and web pages.
+                            I built this portfolio to tell about myself and show some personal projects that I
+                            developed.
+                            I hope you have a good read. &#128512;
+                        </p>
+                    </div>
+                </section>
+                <section id="about" class="about-section">
+                    <div class="section-title">
+                        <img src="./resources/info-icon.png" />
+                        <h2 id="about-title" class="item-title">About</h2>
+                    </div>
+                    <div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <div class="body-wrapper">
+            <div class="content-wrapper">
                 <div class="profile">
                     <img class="profile-picture" src="./resources/profile-picture.jpg" />
                     <h3 class="profile-name">Vinicius Eidi Honda</h3>
                     <h4 id="profile-description" class="profile-description">Full Stack Developer</h4>
                 </div>
-                <div class="navigation">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a class="menu-option" href="#about">
-                                    <span id="about-menu" class="menu-item">About</span>
+                <div class="content">
+                    <div id="about" class="content-item">
+                        <h2 id="about-title" class="item-title">About</h2>
+                        <div class="section-icon">
+                            <img src="./resources/info-icon.png" />
+                        </div>
+                        <span class="content-text">
+                            <label id="name-label" class="label">Name:</label>
+                            <p>Vinicius Eidi Honda</p>
+                        </span>
+                        <span class="content-text">
+                            <label id="age-label" class="label">Age:</label>
+                            <p id="age-text"></p>
+                        </span>
+                        <span class="content-text">
+                            <label id="country-label" class="label">Country:</label>
+                            <p id="country-text">Brazil</p>
+                        </span>
+                        <span class="content-text">
+                            <label id="city-label" class="label">City:</label>
+                            <p>Sorocaba</p>
+                        </span>
+                    </div>
+                    <div id="skills" class="content-item">
+                        <h2 id="skills-title" class="item-title">Skills</h2>
+                        <div class="section-icon">
+                            <img src="./resources/stats-icon.png" />
+                        </div>
+                        <div class="content-group">
+                            <div class="content-section">
+                                <h4 id="dev-skills-title">Developer Skills</h4>
+                                <ul class="item-list">
+                                    <li>C#</li>
+                                    <li>Javascript</li>
+                                    <li>Typescript</li>
+                                    <li>Html</li>
+                                    <li>CSS</li>
+                                    <li>ASP.NET core</li>
+                                    <li>React.js</li>
+                                </ul>
+                            </div>
+                            <div class="content-section">
+                                <h4 id="languages-title">Languages</h4>
+                                <ul class="item-list">
+                                    <li>Portuguese</li>
+                                    <li>English</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact" class="content-item">
+                        <h2 id="contact-title" class="item-title">Contact</h2>
+                        <div class="section-icon">
+                            <img src="./resources/contact-icon.png" />
+                        </div>
+                        <div class="contact-container">
+                            <div class="contact-item">
+                                <a href="tel:+5515997467620" target="_blank">
+                                    <span class="contact-icon">
+                                        <img src="./resources/phone-icon.png" />
+                                    </span>
+                                    <p>
+                                        +55 (15) 997467620
+                                    </p>
                                 </a>
-                            </li>
-                            <li>
-                                <a class="menu-option" href="#skills">
-                                    <span id="skills-menu" class="menu-item">Skills</span>
+                            </div>
+                            <div class="contact-item">
+                                <a href="https://www.linkedin.com/in/viniciusehonda/" target="_blank">
+                                    <span class="contact-icon">
+                                        <img src="./resources/linkedin-icon.png" />
+                                    </span>
+                                    <p>
+                                        Linkedin
+                                    </p>
                                 </a>
-                            </li>
-                            <li>
-                                <a class="menu-option" href="#contact">
-                                    <span id="contact-menu" class="menu-item">Contact</span>
+                            </div>
+                            <div class="contact-item">
+                                <a href="https://github.com/viniciusehonda" target="_blank">
+                                    <span class="contact-icon">
+                                        <img src="./resources/github-icon.png" />
+                                    </span>
+                                    <p>
+                                        Github
+                                    </p>
                                 </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="config">
-                    <div class="language-container">
-                        <button id="en-button" class="language-button" onclick="setLanguage('en')">
-                            English
-                        </button>
-                        <button id="pt-button" class="language-button" onclick="setLanguage('pt-BR')">
-                            Portuguese
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-wrapper">
-            <div class="content">
-                <div id="about" class="content-item">
-                    <h2 id="about-title" class="item-title">About</h2>
-                    <div class="section-icon">
-                        <img src="./resources/info-icon.png" />
-                    </div>
-                    <span class="content-text">
-                        <label id="name-label" class="label">Name:</label>
-                        <p>Vinicius Eidi Honda</p>
-                    </span>
-                    <span class="content-text">
-                        <label id="age-label" class="label">Age:</label>
-                        <p id="age-text"></p>
-                    </span>
-                    <span class="content-text">
-                        <label id="country-label" class="label">Country:</label>
-                        <p id="country-text">Brazil</p>
-                    </span>
-                    <span class="content-text">
-                        <label id="city-label" class="label">City:</label>
-                        <p>Sorocaba</p>
-                    </span>
-                </div>
-                <div id="skills" class="content-item">
-                    <h2 id="skills-title" class="item-title">Skills</h2>
-                    <div class="section-icon">
-                        <img src="./resources/stats-icon.png" />
-                    </div>
-                    <div class="content-group">
-                        <div class="content-section">
-                            <h4 id="dev-skills-title">Developer Skills</h4>
-                            <ul class="item-list">
-                                <li>C#</li>
-                                <li>Javascript</li>
-                                <li>Typescript</li>
-                                <li>Html</li>
-                                <li>CSS</li>
-                                <li>ASP.NET core</li>
-                                <li>React.js</li>
-                            </ul>
-                        </div>
-                        <div class="content-section">
-                            <h4 id="languages-title">Languages</h4>
-                            <ul class="item-list">
-                                <li>Portuguese</li>
-                                <li>English</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div id="contact" class="content-item">
-                    <h2 id="contact-title" class="item-title">Contact</h2>
-                    <div class="section-icon">
-                        <img src="./resources/contact-icon.png" />
-                    </div>
-                    <div class="contact-container">
-                        <div class="contact-item">
-                            <a href="tel:+5515997467620" target="_blank">
-                                <span class="contact-icon">
-                                    <img src="./resources/phone-icon.png" />
-                                </span>
-                                <p>
-                                    +55 (15) 997467620
-                                </p>
-                            </a>
-                        </div>
-                        <div class="contact-item">
-                            <a href="https://www.linkedin.com/in/viniciusehonda/" target="_blank">
-                                <span class="contact-icon">
-                                    <img src="./resources/linkedin-icon.png" />
-                                </span>
-                                <p>
-                                    Linkedin
-                                </p>
-                            </a>
-                        </div>
-                        <div class="contact-item">
-                            <a href="https://github.com/viniciusehonda" target="_blank">
-                                <span class="contact-icon">
-                                    <img src="./resources/github-icon.png" />
-                                </span>
-                                <p>
-                                    Github
-                                </p>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>

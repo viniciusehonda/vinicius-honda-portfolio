@@ -7,11 +7,14 @@ const en = {
     "age": "Age",
     "country": "Country",
     "city": "City",
-    "english": "English",
-    "portuguese": "Portuguese",
+    "english": "EN",
+    "portuguese": "PT",
     "brazil": "Brazil",
     "dev-skills": "Skills",
-    "languages": "Languages"
+    "languages": "Languages",
+    "greeting": "Welcome to my portfolio, my name is",
+    "ocupation": "And i'm a Full Stack Web Developer",
+    "introduction": "I have experience in designing and developing web APIs and web pages. I built this portfolio to tell about myself and show some personal projects that I developed. I hope you have a good read."
 };
 
 const ptBR = {
@@ -23,11 +26,14 @@ const ptBR = {
     "age": "Idade",
     "country": "País",
     "city": "Cidade",
-    "english": "Inglês",
-    "portuguese": "Português",
+    "english": "EN",
+    "portuguese": "PT",
     "brazil": "Brasil",
     "dev-skills": "Habilidades",
-    "languages": "Idiomas"
+    "languages": "Idiomas",
+    "greeting": "Seja bem vindo ao meu portfolio, meu nome é",
+    "ocupation": "E eu sou um Desenvolvedor Web Full Stack",
+    "introduction": "Eu tenho experiência em projetar e desenvolvedor Web APIs e páginas web. Eu construi esse portfolio para falar um pouco sobre mim e mostrar alguns projetos pessoais que eu desenvolvi. Eu esperi que você tenha uma boa leitura."
 };
 
 function Initialize() {
@@ -58,6 +64,10 @@ function initializeLanguage() {
 
     document.getElementById("en-button").innerText = languageRes["english"];
     document.getElementById("pt-button").innerText = languageRes["portuguese"];
+
+    document.getElementById("greeting-title").innerText = languageRes["greeting"];
+    document.getElementById("ocupation-title").innerText = languageRes["ocupation"];
+    document.getElementById("welcome-introduction-text").innerText = languageRes["introduction"] + '😀';
 
     document.getElementById("country-text").innerText = languageRes["brazil"];
 
