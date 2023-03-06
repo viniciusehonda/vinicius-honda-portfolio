@@ -14,7 +14,19 @@ const en = {
     "languages": "Languages",
     "greeting": "Welcome to my portfolio, my name is",
     "ocupation": "And i'm a Full Stack Web Developer",
-    "introduction": "I have experience in designing and developing web APIs and web pages. I built this portfolio to tell about myself and show some personal projects that I developed. I hope you have a good read."
+    "introduction": "I have experience in designing and developing web APIs and web pages. I built this portfolio to tell about myself and show some personal projects that I developed. I hope you have a good read.",
+    "introduction-first-line": "My name is Vinicius, I have always been interested in technology," +
+        "with the video games I played, and much more when I started to have access to computers." +
+        "This interest led me to find out how those softwares or websites worked," +
+        "that seemed to complex for me when I was younger," +
+        "but eventually when I decided the area I wanted to work in and started to study" +
+        "everything became much clearer and I started to like it even more.",
+    "introduction-second-line": "I started working with some desktop windows forms software," +
+        "but as soon as I started to get in touch with the web development's world and I started to" +
+        "and started to understand more about how it works I fell in love with it.",
+    "introduction-third-line": "Technologies I have experience in production:",
+    "introduction-fourth-line": "Some technologies that I have been working with in personal projects: ",
+    "introduction-fifth-line": "Languages I speak:"
 };
 
 const ptBR = {
@@ -33,7 +45,22 @@ const ptBR = {
     "languages": "Idiomas",
     "greeting": "Seja bem vindo ao meu portfolio, meu nome é",
     "ocupation": "E eu sou um Desenvolvedor Web Full Stack",
-    "introduction": "Eu tenho experiência em projetar e desenvolvedor Web APIs e páginas web. Eu construi esse portfolio para falar um pouco sobre mim e mostrar alguns projetos pessoais que eu desenvolvi. Eu esperi que você tenha uma boa leitura."
+    "introduction": "Eu tenho experiência em projetar e desenvolvedor Web APIs e páginas web." +
+        "Eu construi esse portfolio para falar um pouco sobre mim e mostrar alguns projetos pessoais que eu desenvolvi. Eu esperi que você tenha uma boa leitura.",
+    "introduction-first-line": "Meu nome é Vinicius, desde novo sempre me interessei por tecnologia," +
+        "desde video games, e bem mais quando comecei a ter acesso a computadores." +
+        "Esse interesse me levou a querer descobrir como aqueles pogramas ou sites" +
+        "funcionavam," +
+        "aquilo parecia complexo demais para mim quando mais novo," +
+        "mas eventualmente quando decidi a área que queria atuar e comecei a estudar mais," +
+        "tudo aquilo ficou bem mais claro e eu comecei a gostar ainda mais da área que eu" +
+        "havia escolhido.",
+    "introduction-second-line": "Comecei trabalhando com alguns softwares desktop windows forms," +
+        "mas logo que comecei a ter contato com o mundo do desenvolvimento web e quando comecei a" +
+        "entender mais como aquilo funcionava eu acabei me apaixonando.",
+    "introduction-third-line": "Tecnologias que possuo experiência em produção:",
+    "introduction-fourth-line": "Algumas tecnologias que utilizei em projetos pessoais:",
+    "introduction-fifth-line": "Idiomas:"
 };
 
 function Initialize() {
@@ -69,14 +96,17 @@ function initializeLanguage() {
     document.getElementById("ocupation-title").innerText = languageRes["ocupation"];
     document.getElementById("welcome-introduction-text").innerText = languageRes["introduction"] + '😀';
 
+    document.getElementById("introduction-first-line").innerText = languageRes["introduction-first-line"];
+    document.getElementById("introduction-second-line").innerText = languageRes["introduction-second-line"];
+    document.getElementById("introduction-third-line").innerText = languageRes["introduction-third-line"];
+    document.getElementById("introduction-fourth-line").innerText = languageRes["introduction-fourth-line"];
+    document.getElementById("introduction-fifth-line").innerText = languageRes["introduction-fifth-line"];
+
     document.getElementById("country-text").innerText = languageRes["brazil"];
 
-    document.getElementById("profile-description").innerText = languageRes["profile-description"];
     document.getElementById("about-menu").innerText = languageRes["about"];
-    document.getElementById("skills-menu").innerText = languageRes["skills"];
     document.getElementById("contact-menu").innerText = languageRes["contact"];
     document.getElementById("about-title").innerText = languageRes["about"];
-    document.getElementById("skills-title").innerText = languageRes["skills"];
     document.getElementById("contact-title").innerText = languageRes["contact"];
 
     document.getElementById("name-label").innerText = languageRes["name"] + ":";

@@ -26,11 +26,6 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="nav-menu-item" href="#skills">
-                                    <span id="skills-menu" class="menu-item">Skills</span>
-                                </a>
-                            </li>
-                            <li>
                                 <a class="nav-menu-item" href="#contact">
                                     <span id="contact-menu" class="menu-item">Contact</span>
                                 </a>
@@ -50,6 +45,29 @@
                 </nav>
             </div>
         </header>
+
+        <div class="contact-panel">
+            <ul>
+                <li class="contact-item mail">
+                    <a href="mailto:viniciusehonda@gmail.com" target="_blank">
+                        <img src="./resources/mail-icon.png" />
+                        <p class="contact-item-text mail">viniciusehonda@gmail.com</p>
+                    </a>
+                </li>
+                <li class="contact-item social">
+                    <a href="https://github.com/viniciusehonda/" target="_blank">
+                        <img src="./resources/github-icon.png" />
+                        <p class="contact-item-text social">Github</p>
+                    </a>
+                </li>
+                <li class="contact-item social">
+                    <a href="https://www.linkedin.com/in/viniciusehonda/" target="_blank">
+                        <img src="./resources/linkedin-icon.png" />
+                        <p class="contact-item-text social">Linkedin</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
         <div class="content">
             <main class="content-container">
@@ -82,10 +100,24 @@
                             <div class="about-picture-container-wrapper">
                                 <img class="profile-picture" src="./resources/profile-picture.jpg" />
                             </div>
+                            <div>
+                                <span class="content-text">
+                                    <label id="age-label" class="label">Age:</label>
+                                    <p id="age-text"></p>
+                                </span>
+                                <span class="content-text">
+                                    <label id="country-label" class="label">Country:</label>
+                                    <p id="country-text">Brazil</p>
+                                </span>
+                                <span class="content-text">
+                                    <label id="city-label" class="label">City:</label>
+                                    <p>Sorocaba-SP</p>
+                                </span>
+                            </div>
                         </div>
                         <div class="about-text-container">
                             <div class="about-text-wrapper">
-                                <p>
+                                <p id="introduction-first-line">
                                     Meu nome é Vinicius, desde novo sempre me interessei por tecnologia,
                                     desde video games, e bem mais quando comecei a ter acesso a computadores.
                                     Esse interesse me levou a querer descobrir como aqueles pogramas ou sites
@@ -95,13 +127,13 @@
                                     tudo aquilo ficou bem mais claro e eu comecei a gostar ainda mais da área que eu
                                     havia escolhido.
                                 </p>
-                                <p>
-                                    Comecei trabalhando com alguns programas desktop windows forms,
-                                    mas logo que comecei a ter contato com o mundo do desenvolvimento web e comecei a
+                                <p id="introduction-second-line">
+                                    Comecei trabalhando com alguns softwares desktop windows forms,
+                                    mas logo que comecei a ter contato com o mundo do desenvolvimento web e quando comecei a
                                     entender mais como aquilo funcionava eu acabei me apaixonando.
                                 </p>
-                                <p>
-                                    Tecnologias que possuo experiência real:
+                                <p id="introduction-third-line">
+                                    Tecnologias que possuo experiência em produção:
                                 </p>
                             </div>
 
@@ -116,7 +148,7 @@
                             </ul>
 
                             <div class="about-text-wrapper">
-                                <p>
+                                <p id="introduction-fourth-line">
                                     Algumas tecnologias que utilizo em projetos pessoais mas ainda não tive a
                                     oportunidade de utilizar profissionalmente:
                                 </p>
@@ -128,7 +160,7 @@
                             </ul>
 
                             <div class="about-text-wrapper">
-                                <p>
+                                <p id="introduction-fifth-line">
                                     Idiomas:
                                 </p>
                             </div>
@@ -141,6 +173,14 @@
                     </div>
                 </section>
             </main>
+
+            <footer>
+                <div>
+                    <a class="portfolio-footer-link" target="_blank" href="https://github.com/viniciusehonda/vinicius-honda-portfolio">
+                        This portfolio was designed and built by Vinicius Eidi Honda
+                    </a>
+                </div>
+            </footer>
         </div>
 
         <!-- <div class="body-wrapper">
