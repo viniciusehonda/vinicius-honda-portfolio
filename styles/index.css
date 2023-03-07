@@ -109,6 +109,16 @@ body {
     height: 100vh;
 }
 
+@media screen and (max-width: 728px) {
+    .welcome-section {
+        display: flex;
+        padding: 25px;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
 .welcome-section div {
     display: block;
     padding: 5px 0px 5px 0px;
@@ -148,6 +158,12 @@ body {
     max-width: 1000px;
 }
 
+@media screen and (max-width: 728px) {
+    .about-section {
+        padding: 25px;
+    }
+}
+
 .section-title {
     display: flex;
     flex-direction: row;
@@ -169,6 +185,13 @@ body {
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 50px;
+}
+
+@media screen and (max-width: 728px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .about-picture-container {
@@ -217,6 +240,26 @@ body {
     left: 40px;
     right: auto;
     z-index: 20;
+}
+
+.contact-section {
+    display: none;
+}
+
+@media screen and (max-width: 728px) {
+    .contact-panel {
+        display: none;
+    }
+
+    .contact-section {
+        display: block;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 
 .contact-panel ul li {
@@ -270,30 +313,10 @@ body {
     display: block;
 }
 
-@media screen and (max-width: 728px) {
-    .body-wrapper {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        height: 100%;
-        width: 100%;
-    }
-}
-
 .body-wrapper .menu-wrapper {
     order: 1;
     flex-grow: 1;
     max-width: 310px;
-}
-
-@media screen and (max-width: 728px) {
-    .body-wrapper .menu-wrapper {
-        order: 1;
-        flex-grow: 1;
-        max-width: none;
-        padding: 10px;
-    }
 }
 
 .body-wrapper .menu-wrapper .side-menu {
@@ -301,12 +324,6 @@ body {
     display: flex;
     flex-direction: column;
     border-right: solid 1px rgba(161, 161, 161, 0.3);
-}
-
-@media screen and (max-width: 728px) {
-    .body-wrapper .menu-wrapper .side-menu {
-        border-radius: 5px;
-    }
 }
 
 .body-wrapper .menu-wrapper .side-menu .profile {
@@ -472,14 +489,6 @@ body {
 
 .content-group {
     display: flex;
-}
-
-
-@media screen and (max-width: 728px) {
-    .content-group {
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 .content-section {
