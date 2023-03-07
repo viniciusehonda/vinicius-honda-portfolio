@@ -1,5 +1,6 @@
 const en = {
     "profile-description": "Full Stack Developer",
+    "home": "Home",
     "about": "About",
     "skills": "Skills",
     "contact": "Contact",
@@ -31,6 +32,7 @@ const en = {
 
 const ptBR = {
     "profile-description": "Desenvolvedor Full Stack",
+    "home": "Início",
     "about": "Sobre",
     "skills": "Habilidades",
     "contact": "Contato",
@@ -104,6 +106,7 @@ function initializeLanguage() {
 
     document.getElementById("country-text").innerText = languageRes["brazil"];
 
+    document.getElementById("home-menu").innerText = languageRes["home"];
     document.getElementById("about-menu").innerText = languageRes["about"];
     document.getElementById("contact-menu").innerText = languageRes["contact"];
     document.getElementById("about-title").innerText = languageRes["about"];
