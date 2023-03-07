@@ -110,15 +110,15 @@ function initializeLanguage() {
     document.getElementById("about-menu").innerText = languageRes["about"];
     document.getElementById("contact-menu").innerText = languageRes["contact"];
     document.getElementById("about-title").innerText = languageRes["about"];
-    document.getElementById("contact-title").innerText = languageRes["contact"];
+    //document.getElementById("contact-title").innerText = languageRes["contact"];
 
-    document.getElementById("name-label").innerText = languageRes["name"] + ":";
+    //document.getElementById("name-label").innerText = languageRes["name"] + ":";
     document.getElementById("age-label").innerText = languageRes["age"] + ":";
     document.getElementById("country-label").innerText = languageRes["country"] + ":";
     document.getElementById("city-label").innerText = languageRes["city"] + ":";
 
-    document.getElementById("dev-skills-title").innerText = languageRes["dev-skills"];
-    document.getElementById("languages-title").innerText = languageRes["languages"];
+    //document.getElementById("dev-skills-title").innerText = languageRes["dev-skills"];
+    //document.getElementById("languages-title").innerText = languageRes["languages"];
 }
 
 function getLanguage() {
