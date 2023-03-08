@@ -390,3 +390,32 @@ footer {
             background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.contact-item {
+    margin: 10px;
+    display: flex;
+}
+
+.contact-item a {
+    display: table;
+    color: rgba(255, 255, 255, 0.811);
+    text-decoration: none;
+}
+
+.contact-item a p {
+    margin-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.contact-icon {
+    height: 100%;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.contact-icon img {
+    width: 25px;
+    height: 25px;
+}
