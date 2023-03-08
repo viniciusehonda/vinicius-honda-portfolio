@@ -273,6 +273,10 @@ body {
     display: none;
 }
 
+.contact-menu-item {
+    display: none;
+}
+
 @media screen and (max-width: 1200px) {
     .contact-panel {
         display: none;
@@ -286,6 +290,10 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    .contact-menu-item {
+        display: block;
     }
 }
 
