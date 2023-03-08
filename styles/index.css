@@ -191,6 +191,33 @@ body {
     .about-content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-picture-container {
+        max-width: none !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-picture-container-wrapper {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .about-picture-container-wrapper > img {
+        height: 250px;
+        width: 250px;
+        margin: auto;
+    }
+
+    .content-text {
+        justify-content: center;
+        margin-top: 5px;
     }
 }
 
@@ -246,7 +273,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 728px) {
+@media screen and (max-width: 1200px) {
     .contact-panel {
         display: none;
     }
@@ -276,26 +303,6 @@ body {
     display: flex;
     width: 100%;
     text-decoration: none;
-}
-
-.contact-item .contact-item-text {
-    display: none;
-}
-
-.contact-item-text {
-    color: rgba(0, 77, 133);
-    background-color: white;
-    padding: 5px 0px 0px 8px;
-    margin: 0px 5px 0px 5px;
-    border-radius: 4px;
-}
-
-.contact-item-text .social {
-    width: 90px;
-}
-
-.contact-item:hover .contact-item-text {
-    display: block;
 }
 
 .profile-picture {
