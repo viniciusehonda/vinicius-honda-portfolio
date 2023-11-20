@@ -71,6 +71,24 @@ function Initialize() {
     ageElement.innerText = getMyAge();
 
     initializeLanguage();
+    
+    openLanguageModal();
+}
+
+function openLanguageModal()
+{
+    let languageModal = document.getElementById("language-modal");
+    var modalClass = languageModal.className;
+    modalClass = modalClass.concat(" modal-opened");
+    languageModal.className = modalClass;
+}
+
+function closeLanguageModal()
+{
+    let languageModal = document.getElementById("language-modal");
+    var modalClass = languageModal.className;
+    modalClass = modalClass.replace(" modal-opened", "");
+    languageModal.className = modalClass;
 }
 
 function getMyAge() {
@@ -110,15 +128,10 @@ function initializeLanguage() {
     document.getElementById("about-menu").innerText = languageRes["about"];
     document.getElementById("contact-menu").innerText = languageRes["contact"];
     document.getElementById("about-title").innerText = languageRes["about"];
-    //document.getElementById("contact-title").innerText = languageRes["contact"];
-
-    //document.getElementById("name-label").innerText = languageRes["name"] + ":";
+    
     document.getElementById("age-label").innerText = languageRes["age"] + ":";
     document.getElementById("country-label").innerText = languageRes["country"] + ":";
     document.getElementById("city-label").innerText = languageRes["city"] + ":";
-
-    //document.getElementById("dev-skills-title").innerText = languageRes["dev-skills"];
-    //document.getElementById("languages-title").innerText = languageRes["languages"];
 }
 
 function getLanguage() {
@@ -136,6 +149,12 @@ function setLanguage(language) {
     changeLanguageButton();
     window.localStorage.setItem("lang", language);
     initializeLanguage();
+}
+
+function onModalSetLanguageClick(language) {
+    window.localStorage.setItem("lang", language);
+    initializeLanguage();
+    closeLanguageModal();
 }
 
 function changeLanguageButton(language) {

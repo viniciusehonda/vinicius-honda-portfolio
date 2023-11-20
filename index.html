@@ -7,6 +7,7 @@
     <title>Vinicius Honda</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <script src="./scripts/index.js"></script>
 </head>
 
@@ -131,7 +132,8 @@
                                 </p>
                                 <p id="introduction-second-line">
                                     Comecei trabalhando com alguns softwares desktop windows forms,
-                                    mas logo que comecei a ter contato com o mundo do desenvolvimento web e quando comecei a
+                                    mas logo que comecei a ter contato com o mundo do desenvolvimento web e quando
+                                    comecei a
                                     entender mais como aquilo funcionava eu acabei me apaixonando.
                                 </p>
                                 <p id="introduction-third-line">
@@ -205,11 +207,26 @@
 
             <footer>
                 <div>
-                    <a class="portfolio-footer-link" target="_blank" href="https://github.com/viniciusehonda/vinicius-honda-portfolio">
+                    <a class="portfolio-footer-link" target="_blank"
+                        href="https://github.com/viniciusehonda/vinicius-honda-portfolio">
                         This portfolio was designed and built by Vinicius Eidi Honda
                     </a>
                 </div>
             </footer>
+        </div>
+    </div>
+
+    <div id="language-modal" class="modal">
+        <div class="modal-wrapper">
+            <div class="modal-header">
+                <h3>Choose your language / Escolha seu idioma</h3>
+            </div>
+            <div class="modal-content">
+                <div class="modal-language-selector-wrapper">
+                    <button class="modal-language-button" onclick="onModalSetLanguageClick('en')">English</button>
+                    <button class="modal-language-button" onclick="onModalSetLanguageClick('pt-BR')">Português</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
