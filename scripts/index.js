@@ -71,20 +71,29 @@ function Initialize() {
     ageElement.innerText = getMyAge();
 
     initializeLanguage();
-    
+
     openLanguageModal();
+
+    window.onwheel = (event) => {
+        const header = document.getElementById('header-content');
+            if (event.deltaY > 0) {
+                header.style.top = "-80px";
+            } else {
+                console.log('scroll up')
+                header.style.top = ""
+            }
+    }
+    
 }
 
-function openLanguageModal()
-{
+function openLanguageModal() {
     let languageModal = document.getElementById("language-modal");
     var modalClass = languageModal.className;
     modalClass = modalClass.concat(" modal-opened");
     languageModal.className = modalClass;
 }
 
-function closeLanguageModal()
-{
+function closeLanguageModal() {
     let languageModal = document.getElementById("language-modal");
     var modalClass = languageModal.className;
     modalClass = modalClass.replace(" modal-opened", "");
@@ -128,7 +137,7 @@ function initializeLanguage() {
     document.getElementById("about-menu").innerText = languageRes["about"];
     document.getElementById("contact-menu").innerText = languageRes["contact"];
     document.getElementById("about-title").innerText = languageRes["about"];
-    
+
     document.getElementById("age-label").innerText = languageRes["age"] + ":";
     document.getElementById("country-label").innerText = languageRes["country"] + ":";
     document.getElementById("city-label").innerText = languageRes["city"] + ":";
