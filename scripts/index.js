@@ -47,18 +47,18 @@ const ptBR = {
     "languages": "Idiomas",
     "greeting": "Seja bem vindo ao meu portfolio, meu nome é",
     "ocupation": "E eu sou um Desenvolvedor Web Full Stack",
-    "introduction": "Eu tenho experiência em projetar e desenvolvedor Web APIs e páginas web." +
-        "Eu construi esse portfolio para falar um pouco sobre mim e mostrar alguns projetos pessoais que eu desenvolvi. Eu esperi que você tenha uma boa leitura.",
-    "introduction-first-line": "Meu nome é Vinicius, desde novo sempre me interessei por tecnologia," +
+    "introduction": "Eu tenho experiência em projetar e desenvolvedor Web APIs e páginas web. " +
+        "Eu construi esse portfolio para falar um pouco sobre mim e mostrar alguns projetos pessoais que eu desenvolvi. Eu espero que você tenha uma boa leitura. ",
+    "introduction-first-line": "Meu nome é Vinicius, desde novo sempre me interessei por tecnologia, " +
         "desde video games, e bem mais quando comecei a ter acesso a computadores." +
         "Esse interesse me levou a querer descobrir como aqueles pogramas ou sites" +
-        "funcionavam," +
-        "aquilo parecia complexo demais para mim quando mais novo," +
-        "mas eventualmente quando decidi a área que queria atuar e comecei a estudar mais," +
-        "tudo aquilo ficou bem mais claro e eu comecei a gostar ainda mais da área que eu" +
+        "funcionavam, " +
+        "aquilo parecia complexo demais para mim quando mais novo, " +
+        "mas eventualmente quando decidi a área que queria atuar e comecei a estudar mais, " +
+        "tudo aquilo ficou bem mais claro e eu comecei a gostar ainda mais da área que eu " +
         "havia escolhido.",
-    "introduction-second-line": "Comecei trabalhando com alguns softwares desktop windows forms," +
-        "mas logo que comecei a ter contato com o mundo do desenvolvimento web e quando comecei a" +
+    "introduction-second-line": "Comecei trabalhando com alguns softwares desktop windows forms, " +
+        "mas logo que comecei a ter contato com o mundo do desenvolvimento web e quando comecei a " +
         "entender mais como aquilo funcionava eu acabei me apaixonando.",
     "introduction-third-line": "Tecnologias que possuo experiência em produção:",
     "introduction-fourth-line": "Algumas tecnologias que utilizei em projetos pessoais:",
