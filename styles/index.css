@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgba(16, 18, 23, 1);
+    background-color: rgb(16, 16, 23);
     scroll-behavior: smooth;
 }
 
@@ -145,6 +145,10 @@ body {
         height: 100vh;
     }
 
+    .welcome-section div h2 {
+        font-size: 18px !important;
+    }
+
     .contact-section {
         height: 100vh;
     }
@@ -261,8 +265,8 @@ body {
     }
     
     .about-picture-container-wrapper > img {
-        height: 200px !important;
-        width: 150px !important;
+        height: 100px !important;
+        width: 100px !important;
         margin: auto;
     }
 
@@ -271,7 +275,7 @@ body {
         margin-top: 5px;
     }
 
-    .about-text-wrapper p {
+    .about-text-wrapper > p {
         font-size: 12px !important;
     }
 
@@ -320,9 +324,10 @@ body {
     display: block;
 }
 
-.about-text-wrapper p {
+.about-text-wrapper > p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 18px;
+    text-align: justify;
 }
 
 .list {
