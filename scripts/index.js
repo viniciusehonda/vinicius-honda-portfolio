@@ -79,7 +79,6 @@ function Initialize() {
             if (event.deltaY > 0) {
                 header.style.top = "-80px";
             } else {
-                console.log('scroll up')
                 header.style.top = ""
             }
     }
