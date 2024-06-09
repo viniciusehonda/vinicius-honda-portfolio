@@ -212,12 +212,14 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 200px 0;
+    height: 96vh;
     max-width: 1000px;
 }
 
 @media screen and (max-width: 728px) {
     .about-section {
         padding: 25px;
+        height: 100vh;
     }
 }
 
