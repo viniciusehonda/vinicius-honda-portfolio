@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinicius Honda</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/modal.css">
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
 
 <body onload="Initialize();">
@@ -17,34 +17,18 @@
             <div id="header-content" class="header-content">
                 <nav class="header-nav">
                     <div class="logo-image-wrapper">
-                        <img class="logo-image" src="resources/logo.png" />
+                        <img class="logo-image" src="resources/logo.png" alt="Logo">
                     </div>
                     <div class="nav-menu">
                         <ul>
-                            <li>
-                                <a class="nav-menu-item" href="#home">
-                                    <span id="home-menu" class="menu-item">Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-menu-item" href="#about">
-                                    <span id="about-menu" class="menu-item">About</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nav-menu-item" href="#contact">
-                                    <span id="contact-menu" class="menu-item">Contact</span>
-                                </a>
-                            </li>
+                            <li><a class="nav-menu-item" href="#home"><span id="home-menu" class="menu-item">Home</span></a></li>
+                            <li><a class="nav-menu-item" href="#about"><span id="about-menu" class="menu-item">About</span></a></li>
+                            <li><a class="nav-menu-item" href="#contact"><span id="contact-menu" class="menu-item">Contact</span></a></li>
                         </ul>
                         <div class="config">
                             <div class="language-container">
-                                <button id="en-button" class="language-button" onclick="setLanguage('en')">
-                                    EN
-                                </button>
-                                <button id="pt-button" class="language-button" onclick="setLanguage('pt-BR')">
-                                    PT
-                                </button>
+                                <button id="en-button" class="language-button" onclick="setLanguage('en')">EN</button>
+                                <button id="pt-button" class="language-button" onclick="setLanguage('pt-BR')">PT</button>
                             </div>
                         </div>
                     </div>
@@ -54,54 +38,36 @@
 
         <div class="contact-panel">
             <ul>
-                <li class="contact-item mail">
-                    <a href="mailto:viniciusehonda@gmail.com" target="_blank">
-                        <img src="./resources/mail-icon.png" />
-                    </a>
-                </li>
-                <li class="contact-item social">
-                    <a href="https://github.com/viniciusehonda/" target="_blank">
-                        <img src="./resources/github-icon.png" />
-                    </a>
-                </li>
-                <li class="contact-item social">
-                    <a href="https://www.linkedin.com/in/viniciusehonda/" target="_blank">
-                        <img src="./resources/linkedin-icon.png" />
-                    </a>
-                </li>
+                <li class="contact-item mail"><a href="mailto:viniciusehonda@gmail.com" target="_blank"><img src="./resources/mail-icon.png" alt="Mail Icon"></a></li>
+                <li class="contact-item social"><a href="https://github.com/viniciusehonda/" target="_blank"><img src="./resources/github-icon.png" alt="GitHub Icon"></a></li>
+                <li class="contact-item social"><a href="https://www.linkedin.com/in/viniciusehonda/" target="_blank"><img src="./resources/linkedin-icon.png" alt="LinkedIn Icon"></a></li>
             </ul>
         </div>
 
         <div class="content">
             <main class="content-container">
                 <section id="home" class="welcome-section snap-section">
-                    <div>
-                        <h1 id="greeting-title">Welcome to my portfolio, my name is</h1>
-                    </div>
-                    <div>
-                        <h2 id="name-title">Vinicius Eidi Honda</h2>
-                    </div>
-                    <div>
-                        <h3 id="ocupation-title">And i'm a Full Stack Web Developer</h3>
-                    </div>
+                    <div><h1 id="greeting-title">Welcome to my portfolio, my name is</h1></div>
+                    <div><h2 id="name-title">Vinicius Eidi Honda</h2></div>
+                    <div><h3 id="ocupation-title">And I'm a Full Stack Web Developer</h3></div>
                     <div class="welcome-introduction">
                         <p id="welcome-introduction-text">
                             I have experience in designing and developing web APIs and web pages.
-                            I built this portfolio to tell about myself and show some personal projects that I
-                            developed.
-                            I hope you have a good read. &#128512;
+                            I built this portfolio to tell about myself and show some personal projects that I developed.
+                            I hope you have a good read. 😊
                         </p>
                     </div>
                 </section>
+
                 <section id="about" class="about-section snap-section">
                     <div class="section-title">
-                        <img src="./resources/info-icon.png" />
+                        <img src="./resources/info-icon.png" alt="Info Icon">
                         <h2 id="about-title" class="item-title">About</h2>
                     </div>
                     <div class="about-content">
                         <div class="about-picture-container">
                             <div class="about-picture-container-wrapper">
-                                <img class="profile-picture" src="./resources/profile-picture.jpg" />
+                                <img class="profile-picture" src="./resources/profile-picture.jpg" alt="Profile Picture">
                             </div>
                             <div class="content-text-wrapper">
                                 <span class="content-text">
@@ -134,39 +100,27 @@
                                     comecei a
                                     entender mais como aquilo funcionava eu acabei me apaixonando.
                                 </p>
-                                <p id="introduction-third-line">
-                                    Tecnologias que possuo experiência em produção:
-                                </p>
+                                <p id="introduction-third-line">Tecnologias que possuo experiência em produção:</p>
                             </div>
-
                             <ul class="list">
                                 <li>🔹C#</li>
-                                <li>🔹Javascript</li>
-                                <li>🔹Typescript</li>
-                                <li>🔹Html</li>
+                                <li>🔹JavaScript</li>
+                                <li>🔹TypeScript</li>
+                                <li>🔹HTML</li>
                                 <li>🔹CSS</li>
                                 <li>🔹ASP.NET core</li>
                                 <li>🔹React.js</li>
                             </ul>
-
                             <div class="about-text-wrapper">
-                                <p id="introduction-fourth-line">
-                                    Algumas tecnologias que utilizo em projetos pessoais mas ainda não tive a
-                                    oportunidade de utilizar profissionalmente:
-                                </p>
+                                <p id="introduction-fourth-line">Algumas tecnologias que utilizo em projetos pessoais mas ainda não tive a oportunidade de utilizar profissionalmente:</p>
                             </div>
-
                             <ul class="list">
                                 <li>🔹Express.js</li>
-                                <li>🔹Mongo Db</li>
+                                <li>🔹MongoDB</li>
                             </ul>
-
                             <div class="about-text-wrapper">
-                                <p id="introduction-fifth-line">
-                                    Idiomas:
-                                </p>
+                                <p id="introduction-fifth-line">Idiomas:</p>
                             </div>
-
                             <ul class="list">
                                 <li>🔹Portuguese</li>
                                 <li>🔹English</li>
@@ -180,33 +134,27 @@
                         <div class="contact-container">
                             <div class="contact-item">
                                 <a href="mailto:viniciusehonda@gmail.com" target="_blank">
-                                    <span class="contact-icon">
-                                        <img src="./resources/mail-icon.png" />
-                                    </span>
+                                    <span class="contact-icon"><img src="./resources/mail-icon.png" alt="Mail Icon"></span>
                                 </a>
                             </div>
                             <div class="contact-item">
                                 <a href="https://www.linkedin.com/in/viniciusehonda/" target="_blank">
-                                    <span class="contact-icon">
-                                        <img src="./resources/linkedin-icon.png" />
-                                    </span>
+                                    <span class="contact-icon"><img src="./resources/linkedin-icon.png" alt="LinkedIn Icon"></span>
                                 </a>
                             </div>
                             <div class="contact-item">
                                 <a href="https://github.com/viniciusehonda" target="_blank">
-                                    <span class="contact-icon">
-                                        <img src="./resources/github-icon.png" />
-                                    </span>
+                                    <span class="contact-icon"><img src="./resources/github-icon.png" alt="GitHub Icon"></span>
                                 </a>
                             </div>
                         </div>
+                    </div>
                 </section>
             </main>
 
             <footer>
                 <div>
-                    <a class="portfolio-footer-link" target="_blank"
-                        href="https://github.com/viniciusehonda/vinicius-honda-portfolio">
+                    <a class="portfolio-footer-link" target="_blank" href="https://github.com/viniciusehonda/vinicius-honda-portfolio">
                         This portfolio was designed and built by Vinicius Eidi Honda
                     </a>
                 </div>
